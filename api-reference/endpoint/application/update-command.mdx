@@ -1,0 +1,34 @@
+---
+title: "Update Command"
+api: "PATCH https://api.centralcart.com.br/api/application/command/{command-id}"
+authMethod: "bearer"
+description: "Get information about your store."
+---
+
+<ParamField path="command-id" type="string" required>
+  The id of the command to be updated
+</ParamField>
+
+<ParamField body="status" type="string" required>
+  One of: "DONE", "FAILED", "PENDING", "CANCELED". <br /> It will only be listed on 
+  [queued commands](/api-reference/endpoint/application/queued-commands) if command status is PENDING
+</ParamField>
+
+<ParamField body="response" type="string">
+  If the status is "DONE" or "FAILED" you may provide some information about the delivery
+</ParamField>
+
+<ParamField body="reason" type="string">
+  If the status is "CANCELED" you may provide the reason of the cancellation
+</ParamField>
+
+<ResponseExample>
+
+```json Request
+{
+  "status": "DONE",
+  "response": "Command successful delivered"
+}
+```
+
+</ResponseExample>

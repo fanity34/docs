@@ -1,0 +1,52 @@
+---
+title: "Application Details"
+api: "GET https://api.centralcart.com.br/api/application"
+authMethod: "bearer"
+description: "Get information about your store."
+---
+
+### Response
+
+<ResponseField name="id" type="number">
+  The ID of your store
+</ResponseField>
+
+<ResponseField name="name" type="string">
+  The name of your store
+</ResponseField>
+
+<ResponseField name="plan" type="string">
+  The plan of your store
+</ResponseField>
+
+<ResponseField name="overdue_date" type="string">
+  The overdue date of your store
+</ResponseField>
+
+<ResponseField name="url" type="string">
+  The url of your store
+</ResponseField>
+
+<ResponseField name="logo" type="string">
+  The logo url of your store
+</ResponseField>
+
+<ResponseField name="primary_color" type="string">
+  The hexadecimal primary color of your store
+</ResponseField>
+
+<ResponseExample>
+
+```json Response
+{
+  "id": 1,
+  "name": "Tema Source",
+  "plan": "RICH",
+  "overdue_date": "2032-08-10T18:57:32.000-03:00",
+  "url": "https://demo.centralcart.com.br",
+  "logo": "https://cdn.centralcart.com.br/stores/1/theme/824a0dfe-efcc-419b-b1c7-92808f2db8be.png",
+  "primary_color": "#6a5acd"
+}
+```
+
+</ResponseExample>

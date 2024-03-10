@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "CentralCart",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -17,13 +17,16 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Suporte",
+      "url": "https://discord.gg/2FwrfJySFm"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://app.centralcart.com.br"
+  },
+  "primaryTab": {
+    "name": "Documentação"
   },
   "tabs": [
     {
@@ -33,39 +36,42 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Nosso Discord",
+      "icon": "discord",
+      "url": "https://centralcart.com.br/discord"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Nosso YouTube",
+      "icon": "youtube",
+      "url": "https://www.youtube.com/@CentralCartBR"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Siga no Instagram",
+      "icon": "instagram",
+      "url": "https://www.instagram.com/centralcartbr/"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Bem-vindo",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        {
+          "group": "Métodos de pagamento",
+          "pages": ["gateways/pix", "gateways/mercadopago", "gateways/paypal", "gateways/stripe", "gateways/picpay"]
+        }
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Documentação FiveM",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "fivem/install"
+      ]
+    },
+    {
+      "group": "Documentação Minecraft",
+      "pages": [
+        "minecraft/install"
       ]
     },
     {
@@ -75,17 +81,19 @@
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Application Endpoints",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/endpoint/application/get",
+        "api-reference/endpoint/application/queued-commands",
+        "api-reference/endpoint/application/update-command"
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "discord": "https://discord.gg/wKkG8S2yWa",
+    "youtube": "https://www.youtube.com/channel/UCt8ijxO7MN6Y4ipzvNskeiA",
+    "instagram": "https://www.instagram.com/centralcartbr",
+    "facebook": "https://www.facebook.com/centralcartbr/",
+    "twitter": "https://twitter.com/centralcartbr"
   }
 }

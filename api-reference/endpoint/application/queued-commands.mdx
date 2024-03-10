@@ -1,0 +1,92 @@
+---
+title: "Queued Commands"
+api: "GET https://api.centralcart.com.br/api/application/queued_commands"
+authMethod: "bearer"
+description: "Get commands waiting to be executed."
+---
+
+### Response
+
+<ResponseField name="id" type="number">
+  The command ID
+</ResponseField>
+
+<ResponseField name="store_id" type="string">
+  The store ID
+</ResponseField>
+
+<ResponseField name="command" type="string">
+  The command string to be handled and executed
+</ResponseField>
+
+<ResponseField name="offline_execute" type="boolean">
+  If true will be executed even with player offline
+</ResponseField>
+
+<ResponseField name="order" type="Order Object">
+  <Expandable title="properties" defaultOpen={true}>
+    <ResponseField name="client_identifier" type="string">
+      The client identifier provided on checkout
+    </ResponseField>
+    <ResponseField name="client_email" type="string">
+      The client email provided on checkout
+    </ResponseField>
+    <ResponseField name="client_name" type="string">
+      The client name provided on checkout
+    </ResponseField>
+    <ResponseField name="client_discord" type="string | null">
+      The client discord provided on checkout.
+    </ResponseField>
+    <ResponseField name="internal_id" type="string">
+      The internal id of the order used to get detailed information if needed
+    </ResponseField>
+  </Expandable>
+</ResponseField>
+
+<ResponseExample>
+
+```json Response
+[
+  {
+    "id": 1813415,
+    "store_id": 1,
+    "command": "addGroup 1 Ouro",
+    "offline_execute": false,
+    "order": {
+      "client_identifier": "1",
+      "client_email": "support@centralcart.com.br",
+      "client_name": "Caique",
+      "client_discord": null,
+      "internal_id": "c7ce903c0e1c24e94796aa3a08be68b19100dcc6"
+    }
+  },
+  {
+    "id": 1813417,
+    "store_id": 1,
+    "command": "addVehicle 1 brioso",
+    "offline_execute": false,
+    "order": {
+      "client_identifier": "1",
+      "client_email": "support@centralcart.com.br",
+      "client_name": "Caique",
+      "client_discord": null,
+      "internal_id": "c7ce903c0e1c24e94796aa3a08be68b19100dcc6"
+    }
+  },
+  {
+    "id": 1813419,
+    "store_id": 1,
+    "command": "userNotify 1 c7ce903c0e1c24e94796aa3a08be68b19100dcc6",
+    "offline_execute": false,
+    "order": {
+      "client_identifier": "1",
+      "client_email": "support@centralcart.com.br",
+      "client_name": "Caique",
+      "client_discord": null,
+      "internal_id": "c7ce903c0e1c24e94796aa3a08be68b19100dcc6"
+    }
+  }
+]
+```
+
+</ResponseExample>
