@@ -65,7 +65,10 @@
           "group": "Métodos de pagamento",
           "pages": ["gateways/pix", "gateways/mercadopago", "gateways/paypal", "gateways/stripe", "gateways/picpay"]
         },
-        "general/configurar-bot"
+        {
+          "group": "Discord",
+          "pages": ["general/configurar-bot", "general/conseguir-cargo"]
+        }
       ]
     },
     {
@@ -78,6 +81,12 @@
       "group": "Documentação Minecraft",
       "pages": [
         "minecraft/install"
+      ]
+    },
+    {
+      "group": "Empresa",
+      "pages": [
+        "termos", "suporte", "faq"
       ]
     },
     {
