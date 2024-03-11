@@ -67,14 +67,20 @@
         },
         {
           "group": "Discord",
-          "pages": ["general/configurar-bot", "general/conseguir-cargo"]
-        }
+          "pages": ["general/configurar-bot", "general/personalizar-bot", "general/conseguir-cargo","general/widgets-discord"]
+        },
+
+        "general/usar-meu-dominio"
+        
       ]
     },
     {
       "group": "Documentação FiveM",
       "pages": [
-        "fivem/install"
+        {
+          "group": "Fivem",
+          "pages": [ "fivem/install", "fivem/produto-temporario", "fivem/escolhas-fivem", "fivem/como-criar-loja-fivem"]
+        }
       ]
     },
     {

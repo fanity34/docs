@@ -1,0 +1,41 @@
+---
+title: Usar meu Dominio
+description: 'Neste guia, mostraremos como adicionar um domínio próprio em sua loja.'
+---
+
+## Apontamento API
+Nesse exemplo, iremos fazer o apontamento utilizando o site da Cloudflare mas você pode utilizar outras plataformas para fazer o redirecionamento para o seu site. 
+
+1. Procure pela aba **dns** e em seguida **registros**.
+
+<Frame>
+![Aba de registros](/images/shared/dominio-dns.png)
+</Frame>
+
+2. Clique em **adicionar registro** e crie um registro **CNAME**, em nome iremos usar o subdomínio (loja) e apontar para api.centralcart.com.br.
+
+<Frame>
+![Aba de registros](/images/shared/dominio-registro.png)
+</Frame>
+
+3. No exemplo acima estamos usando o domínio wyzehost.com.br, adicionamos o subdomínio **loja**. A url para acessar o site ficará **loja.wyzehost.com.br**.
+4. Se não quiser usar o subdomínio, basta coloca o @ em "nome" que a url para acessar o site ficará somente o seu domínio. 
+
+<Info>**Domínio** é o nome de identificação de um site na internet, por exemplo, wyzehost.com.br. 
+**Subdomínio** é um endereço que faz parte do domínio, ou seja, é uma ramificação do domínio, por exemplo, loja.wyzehost.com.br</Info>
+
+## Registrar seu domínio na sua Loja
+Uma vez completados os passos acima, você precisará ir ao painel administrativo de sua Loja.
+
+1. Navegue até [Configurações -> Dominío](https://app.centralcart.com.br/settings/domain).
+2. Procure por **vincular domínio** e adiciona o nome que você apontou para a nossa api.
+
+<Frame>
+![Vinculanndo dominio](/images/shared/dominio-painel.png)
+</Frame>
+
+3. Selecione o botão **verificar conexão** e o seu dominio está configurado.
+
+<Check>Em algumas empresas o redirecionamento pode demorar para propagar 100% e a nossa plataforma detectar, qualquer dúvida, entre em contato com a  nossa equipe de suporte em nosso [WhatsApp](https://api.whatsapp.com/send/?phone=5515992647447&text=Ol%C3%A1%2C+tenho+d%C3%BAvidas+sobre+a+CentralCart&type=phone_number&app_absent=0) 
+e [Discord](https://centralcart.com.br/discord).</Check>
+
