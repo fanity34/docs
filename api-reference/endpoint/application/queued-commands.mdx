@@ -8,37 +8,37 @@ description: "Get commands waiting to be executed."
 ### Response
 
 <ResponseField name="id" type="number">
-  The command ID
+  O ID do comando
 </ResponseField>
 
 <ResponseField name="store_id" type="string">
-  The store ID
+  O id da loja
 </ResponseField>
 
 <ResponseField name="command" type="string">
-  The command string to be handled and executed
+  O comando a ser manipulado e executado
 </ResponseField>
 
 <ResponseField name="offline_execute" type="boolean">
-  If true will be executed even with player offline
+  Se "true", o comando será executado mesmo com o jogador offline
 </ResponseField>
 
 <ResponseField name="order" type="Order Object">
   <Expandable title="properties" defaultOpen={true}>
     <ResponseField name="client_identifier" type="string">
-      The client identifier provided on checkout
+      O identificador do cliente fornecido na finalização da compra
     </ResponseField>
     <ResponseField name="client_email" type="string">
-      The client email provided on checkout
+      O e-mail do cliente fornecido na finalização da compra
     </ResponseField>
     <ResponseField name="client_name" type="string">
-      The client name provided on checkout
+      O nome do cliente fornecido na finalização da compra
     </ResponseField>
     <ResponseField name="client_discord" type="string | null">
-      The client discord provided on checkout.
+      O Discord ID do cliente fornecido na finalização da compra
     </ResponseField>
     <ResponseField name="internal_id" type="string">
-      The internal id of the order used to get detailed information if needed
+      O ID interno do pedido usado para obter informações detalhadas, se necessário
     </ResponseField>
   </Expandable>
 </ResponseField>
@@ -55,7 +55,7 @@ description: "Get commands waiting to be executed."
     "order": {
       "client_identifier": "1",
       "client_email": "support@centralcart.com.br",
-      "client_name": "Caique",
+      "client_name": "Central Cart",
       "client_discord": null,
       "internal_id": "c7ce903c0e1c24e94796aa3a08be68b19100dcc6"
     }
@@ -68,7 +68,7 @@ description: "Get commands waiting to be executed."
     "order": {
       "client_identifier": "1",
       "client_email": "support@centralcart.com.br",
-      "client_name": "Caique",
+      "client_name": "Central Cart",
       "client_discord": null,
       "internal_id": "c7ce903c0e1c24e94796aa3a08be68b19100dcc6"
     }
@@ -81,7 +81,7 @@ description: "Get commands waiting to be executed."
     "order": {
       "client_identifier": "1",
       "client_email": "support@centralcart.com.br",
-      "client_name": "Caique",
+      "client_name": "Central Cart",
       "client_discord": null,
       "internal_id": "c7ce903c0e1c24e94796aa3a08be68b19100dcc6"
     }

@@ -6,20 +6,20 @@ description: "Get information about your store."
 ---
 
 <ParamField path="command-id" type="string" required>
-  The id of the command to be updated
+  O ID do comando a ser atualizado
 </ParamField>
 
 <ParamField body="status" type="string" required>
-  One of: "DONE", "FAILED", "PENDING", "CANCELED". <br /> It will only be listed on 
-  [queued commands](/api-reference/endpoint/application/queued-commands) if command status is PENDING
+  Um dos seguintes: "DONE", "FAILED", "PENDING", "CANCELED". <br /> Só será listado em
+  [queued commands](/api-reference/endpoint/application/queued-commands) se o status do comando for PENDENTE
 </ParamField>
 
 <ParamField body="response" type="string">
-  If the status is "DONE" or "FAILED" you may provide some information about the delivery
+  Se o status for "DONE" ou "FAILED" você poderá fornecer algumas informações sobre a entrega
 </ParamField>
 
 <ParamField body="reason" type="string">
-  If the status is "CANCELED" you may provide the reason of the cancellation
+  Se o status for "CANCELADO" você poderá fornecer o motivo do cancelamento
 </ParamField>
 
 <ResponseExample>
