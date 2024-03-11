@@ -55,11 +55,17 @@
     {
       "group": "Bem-vindo",
       "pages": [
-        "introduction",
+        "introduction"
+      ]
+    },
+    {
+      "group": "Geral",
+      "pages": [
         {
           "group": "Métodos de pagamento",
           "pages": ["gateways/pix", "gateways/mercadopago", "gateways/paypal", "gateways/stripe", "gateways/picpay"]
-        }
+        },
+        "general/configurar-bot"
       ]
     },
     {
