@@ -67,7 +67,7 @@
         },
         {
           "group": "Discord",
-          "pages": ["general/configurar-bot", "general/personalizar-bot", "general/conseguir-cargo","general/widgets-discord"]
+          "pages": ["general/configurar-bot", "general/personalizar-bot", "general/conseguir-cargo", "general/widget-discord"]
         },
 
         "general/usar-meu-dominio"
@@ -79,7 +79,7 @@
       "pages": [
         {
           "group": "Documentação FiveM",
-          "pages": [ "fivem/instalacao", "fivem/produto-temporario", "fivem/escolhas-fivem", "fivem/como-criar-loja"]
+          "pages": [ "fivem/instalacao", "fivem/produto-temporario", "fivem/adicionar-escolhas", "fivem/como-criar-loja"]
         },
         {
           "group": "Documentação Minecraft",
