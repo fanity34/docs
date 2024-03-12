@@ -114,5 +114,10 @@
     "instagram": "https://www.instagram.com/centralcartbr",
     "facebook": "https://www.facebook.com/centralcartbr/",
     "twitter": "https://twitter.com/centralcartbr"
+  },
+  "analytics": {
+    "posthog": {
+      "apiKey": "phc_wazVyLSovnDuD5hnr0YZkClt55BCriIuerJTClzEo2S"
+    }
   }
 }
