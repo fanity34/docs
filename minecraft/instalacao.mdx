@@ -17,14 +17,14 @@ description: 'Nosso plugin permite a automatização da entrega dos seus produto
 3. Agora, basta clicar em **download** que o plugin será baixado diretamente para o seu computador.
 
 <Frame>
-  ![Baixe o plugin](/images/shared/plugin-minecraft.png)
+  ![Baixe o plugin](/images/minecraft/plugin-minecraft.png)
 </Frame>
 
 ## Criando token
 1. Clique no botão **novo servidor** e adiciona o nome que ficará vinculando ao token e clique em criar servidor.
 
 <Frame>
-  ![Criando token](/images/shared/criar-novo-servidor.png)
+  ![Criando token](/images/minecraft/criar-novo-servidor.png)
 </Frame>
 
 2. Pronto, o token que você utilizará para conectar o plugin com o seu site está criado.
@@ -36,18 +36,19 @@ description: 'Nosso plugin permite a automatização da entrega dos seus produto
 3. Após o plugin ser iniciado, uma pasta de configuração será gerado. 
 
 <Frame>
-  ![Plugin Minecraft](/images/shared/plugin-minecraft.png)
+  ![Plugin Minecraft](/images/minecraft/plugin-folder.png)
 </Frame>
 
 4. Acesse a pasta CentralCart e edite o arquivo properties.
 5. Apaga a mensagem **token-da-sua-loja** e adicione o token da sua loja.
 
-```javascript properties.yml
-secret 26e5fdfa-b555-4bca-9b72-08e53ba47830
+```yaml properties.yml
+secret: 26e5fdfa-b555-4bca-9b72-08e53ba47830
 ```
 
 <Note>
-Você pode configurar o token por comando também, basta digitar o seguinte comando no console do seu servidor: `/centralcart token 26e5fdfa-b555-4bca-9b72-08e53ba47830`
+  Você pode configurar o token por comando também, basta digitar o 
+  seguinte comando no console do seu servidor: `/centralcart token 26e5fdfa-b555-4bca-9b72-08e53ba47830`
 
-No lugar do token acima, você coloca o token da sua loja.
+  No lugar do token acima, você coloca o token da sua loja.
 </Note>

@@ -75,20 +75,15 @@
       ]
     },
     {
-      "group": "Documentação FiveM",
+      "group": "Integrações com jogos",
       "pages": [
         {
-          "group": "Fivem",
-          "pages": [ "fivem/install", "fivem/produto-temporario", "fivem/escolhas-fivem", "fivem/como-criar-loja-fivem"]
-        }
-      ]
-    },
-    {
-      "group": "Documentação Minecraft",
-      "pages": [
+          "group": "Documentação FiveM",
+          "pages": [ "fivem/instalacao", "fivem/produto-temporario", "fivem/escolhas-fivem", "fivem/como-criar-loja"]
+        },
         {
-          "group": "Minecraft",
-          "pages": [ "minecraft/instalaçao-minecraft", "minecraft/produto-temporario", "minecraft/como-criar-loja-minecraft"]
+          "group": "Documentação Minecraft",
+          "pages": [ "minecraft/instalacao", "minecraft/produto-temporario", "minecraft/como-criar-loja"]
         }
       ]
     },
