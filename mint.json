@@ -94,13 +94,13 @@
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Documentação da API",
       "pages": [
-        "api-reference/introduction"
+        "api-reference/authentication"
       ]
     },
     {
-      "group": "Application Endpoints",
+      "group": "Endpoints de aplicação",
       "pages": [
         "api-reference/endpoint/application/get",
         "api-reference/endpoint/application/queued-commands",
