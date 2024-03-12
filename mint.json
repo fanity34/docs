@@ -86,7 +86,10 @@
     {
       "group": "Documentação Minecraft",
       "pages": [
-        "minecraft/install"
+        {
+          "group": "Minecraft",
+          "pages": [ "minecraft/instalaçao-minecraft", "minecraft/produto-temporario"]
+        }
       ]
     },
     {
